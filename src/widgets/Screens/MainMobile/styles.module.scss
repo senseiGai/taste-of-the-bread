@@ -9,14 +9,11 @@
         position: relative;
         &_small_ellipse {
             position: absolute;
-            top: 0;
             left: clamp(20px,9.3456vw,80px);
         }
 
         &_taste {
-            position: absolute;
-            left:clamp(14px,6.541919999999999vw,56px);
-            top: clamp(16.5px,7.71012vw,66px);
+            
         }
 
         &_bread {
