@@ -1,18 +1,23 @@
-import React from 'react';
-import styles from './styles.module.scss';
+import React from 'react'
+import styles from './styles.module.scss'
 
-interface IParagraph {
-    paragraphType: 'mobile'; 
-    text: string;
-    margin?: string; 
+interface Props {
+	text: string
+	margin?: string
+	align?: string
+	width?: string
+	paragraphType: 'mobile' 
 }
 
-export const Paragraph: React.FC<IParagraph> = ({ paragraphType, margin = '' ,text}) => {
-    const paragraphClass = `${styles.letter} ${styles[paragraphType]} ${margin ? margin : ''}`;
+export const Paragraph: React.FC<Props> = ({ text, margin, width, align, paragraphType }) => {
+	const paragraphClass = `${styles.paragraph} ${
+		styles[`paragraph--${paragraphType}`]
+	} ${margin} ${align}`
 
-    return (
-        <span className={paragraphClass}>
-            {text}
-        </span>
-    );
-};
+	return (
+		<p className={`${paragraphClass} `} style={{ width }}>
+			{text}
+		</p>
+	)
+}
+

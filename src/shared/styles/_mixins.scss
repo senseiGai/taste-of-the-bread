@@ -1,4 +1,4 @@
-@import url(./_variables.scss);
+@import "./_variables.scss";
 
 
 @mixin respond-to($breakpoint) {
@@ -12,3 +12,20 @@
       @warn "Unknown breakpoint: #{$breakpoint}";
     }
   }
+
+  @mixin customFadeIn($delay) {
+    animation-name: fadeIn;
+    animation-duration: 0.5s;
+    animation-delay: $delay;
+    animation-fill-mode: both;
+  
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+  }
+  

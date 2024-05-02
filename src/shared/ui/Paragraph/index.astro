@@ -1,0 +1,22 @@
+---
+import styles from './styles.module.scss'
+import { fade } from 'astro:transitions'
+
+interface Props {
+	text: string
+	margin?: string
+	align?: string
+	width?: string
+	paragraphType: 'red' | 'white' | 'dark'
+}
+
+const { text, margin, width, align, paragraphType } = Astro.props
+
+const paragraphClass = `${styles.paragraph} ${
+	styles[`paragraph--${paragraphType}`]
+} ${margin ? margin : ''} ${width} ${align}`
+---
+
+<p class={paragraphClass} style={{ width: width }} transition:animate={fade({ duration: '0.3s' })}>
+	{text}
+</p>

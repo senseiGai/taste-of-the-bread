@@ -1,33 +1,6 @@
 .container {
-    width: 100vw; 
-    height: clamp(175px,81.774vw,700px);
-    overflow-x: hidden;
-    overflow-y: hidden;
-
-    &__images {
-        position: relative;
-
-        &_small_ellipse {
-            position: absolute;
-            left: clamp(20px, 9.3456vw, 80px);
-        }
-
-        &_bread {
-            position: absolute;
-            left: clamp(28px, 13.08384vw, 112px);
-            top: 14px;
-            z-index: 1;
-            width:clamp(160px,74.7648vw,640px);
-        }
-
-        &_big_ellipse {
-            position: absolute;
-            left: clamp(132.5px, 61.9146vw, 530px);
-        }
-
-        &_wheat {
-            position: absolute;
-            left: clamp(152.5px, 71.2602vw, 610px);
-        }
-    }
+	display: flex;
+	overflow: hidden;
+	justify-content: center;
+	align-items: center;
 }

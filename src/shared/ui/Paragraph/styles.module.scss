@@ -1,0 +1,13 @@
+@import "../../styles/_mixins.scss";
+
+.paragraph--mobile {
+    text-align: center;
+    @apply text-primary-dark;
+    @apply font-Proxima;
+    font-size: clamp(8px,3.73824vw,32px);
+    font-style: normal;
+    font-weight: 200;
+    line-height: normal; 
+
+    @include customFadeIn(0.5s);
+}

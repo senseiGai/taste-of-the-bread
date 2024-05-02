@@ -1,6 +1,6 @@
 ---
 import { HeaderMobile } from '@features/HeaderMobile/index'
-import MainMobile from '@widgets/Screens/MainMobile/index'
+import MainMobile from '@widgets/Screens/MainMobile/index.astro'
 
 import Layout from '../layouts/Layout.astro'
 
@@ -13,6 +13,6 @@ import styles from './styles/Home/styles.module.scss'
 >
 	<main class={styles.main__mobile} id="main-mobile">
 		<HeaderMobile client:load />
-		<MainMobile client:load />
+		<MainMobile />
 	</main>
 </Layout>

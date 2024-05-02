@@ -3,7 +3,7 @@ module.exports = {
 	theme: {
 		extend: {
 			fontFamily: {
-				'Proxima Soft': ['Proxima Soft','sans-serif'],
+				'Proxima': ['Proxima Soft','sans-serif'],
 				'Helvetica' : ["Helvetica Neue", 'sans-serif']
 			},
 			colors: {
