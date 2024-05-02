@@ -11,7 +11,7 @@ export const InvertedText: React.FC<IInvertedText> = ({ invertedTextType, letter
     const invertedTextClass = `${styles.letter} ${styles[invertedTextType]} ${margin ? margin : ''}`;
 
     return (
-        <span className={invertedTextClass} ref={ref}>
+        <span className={invertedTextClass}>
             {letter}
         </span>
     );

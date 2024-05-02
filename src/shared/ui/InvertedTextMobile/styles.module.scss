@@ -1,7 +1,7 @@
 .letter {
     display: block;
     transform: rotate(-90deg);
-    font-family: "Helvetica Neue", sans-serif;
+    @apply font-Helvetica;
 }
 
 .mobile {
