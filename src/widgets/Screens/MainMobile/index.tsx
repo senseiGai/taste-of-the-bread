@@ -1,4 +1,3 @@
-import React, { useRef } from 'react';
 import { InvertedText } from '@shared/ui/InvertedTextMobile';
 import { useAnimateSmallEllipse } from '@shared/ui/lib/hooks/Animations/useAnimateSmallEllipse';
 import { letters } from '@shared/ui/lib/content/invertedLettersContent';
