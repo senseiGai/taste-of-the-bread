@@ -1,14 +1,16 @@
 import { useRef } from 'react';
 import { InvertedText } from '@shared/ui/InvertedTextMobile';
-import { useAnimateSmallEllipse } from '@shared/ui/lib/hooks/Animations/useAnimateSmallEllipse';
-import useAnimatedLetters from '@shared/ui/lib/hooks/Animations/useAnimatedLetters'; 
-import { useAnimatedBread } from '@shared/ui/lib/hooks/Animations/useAnimatedBread';
-import { letters } from '@shared/ui/lib/content/invertedLettersContent';
+import { useAnimateSmallEllipse } from '@shared/lib/hooks/Animations/useAnimateSmallEllipse';
+import useAnimatedLetters from '@shared/lib/hooks/Animations/useAnimatedLetters'; 
+import { useAnimatedBread } from '@shared/lib/hooks/Animations/useAnimatedBread';
+import { useAnimateBigEllipse } from '@shared/lib/hooks/Animations/useAnimatedBigEllipse';
+import { useAnimateWheat } from '@shared/lib/hooks/Animations/useAnimatedWheat';
+import { letters } from '@shared/lib/content/invertedLettersContent';
 
 import big_ellipse from '@assets/Main/big_ellipse.svg';
 import small_ellipse from '@assets/Main/small_ellipse.svg';
 import wheat from '@assets/Main/wheat.svg';
-import bread from '@assets/Main/bread.svg';
+import bread from '@assets/Main/bread.webp';
 
 import styles from './styles.module.scss';
 
@@ -16,6 +18,8 @@ export default function MainMobile() {
   const smallEllipseRef = useAnimateSmallEllipse();
   const breadRef = useAnimatedBread();
   const letterContainerRef = useRef(null); 
+  const bigEllipseRef = useAnimateBigEllipse();
+  const wheatRef = useAnimateWheat();
 
   useAnimatedLetters(letterContainerRef); 
 
@@ -28,9 +32,9 @@ export default function MainMobile() {
             <InvertedText key={index} letter={letter} invertedTextType="mobile" />
           ))}
         </div>
-        <img src={bread.src} ref={breadRef} alt="bread" className={styles.container__images_bread}/>
-        <img src={big_ellipse.src} alt="big-ellipse" className={styles.container__images_big_ellipse}/>
-        <img src={wheat.src} alt="wheat" className={styles.container__images_wheat} />
+        <img src={bread.src} alt="bread"  className={styles.container__images_bread}/>
+        <img src={big_ellipse.src}  alt="big-ellipse" ref={bigEllipseRef} className={styles.container__images_big_ellipse}/>
+        <img src={wheat.src} alt="wheat" ref={wheatRef} className={styles.container__images_wheat} />
       </div>
     </div>
   );

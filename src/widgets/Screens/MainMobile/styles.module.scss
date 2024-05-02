@@ -1,7 +1,6 @@
 .container {
-    @apply bg-primary-bggrey;
     width: 100vw; 
-    height: clamp(142px,66.35376vw,568px);
+    height: clamp(175px,81.774vw,700px);
     overflow-x: hidden;
     overflow-y: hidden;
 
@@ -16,8 +15,9 @@
         &_bread {
             position: absolute;
             left: clamp(28px, 13.08384vw, 112px);
-            top: clamp(5px, 2.3364vw, 20px);
+            top: 14px;
             z-index: 1;
+            width:clamp(160px,74.7648vw,640px);
         }
 
         &_big_ellipse {
