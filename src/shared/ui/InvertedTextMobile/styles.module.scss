@@ -1,0 +1,12 @@
+.letter {
+    display: block;
+    transform: rotate(-90deg);
+    font-family: "Helvetica Neue", sans-serif;
+}
+
+.mobile {
+    font-weight: 700;
+    color: #444;
+    font-size: clamp(50px,23.363999999999997vw,200px);
+    line-height:clamp(30px,14.0184vw,120px); 
+}

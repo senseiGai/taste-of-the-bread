@@ -1,36 +1,33 @@
 .container {
     @apply bg-primary-bggrey;
-    width: 100wv;
-    height: clamp(132px,61.68096vw,528px);
+    width: 100vw; 
+    height: clamp(142px,66.35376vw,568px);
     overflow-x: hidden;
     overflow-y: hidden;
 
     &__images {
         position: relative;
+
         &_small_ellipse {
             position: absolute;
-            left: clamp(20px,9.3456vw,80px);
-        }
-
-        &_taste {
-            
+            left: clamp(20px, 9.3456vw, 80px);
         }
 
         &_bread {
             position: absolute;
-            left: clamp(28px,13.083839999999999vw,112px);
-            top: clamp(5px,2.3364vw,20px);
+            left: clamp(28px, 13.08384vw, 112px);
+            top: clamp(5px, 2.3364vw, 20px);
             z-index: 1;
         }
 
         &_big_ellipse {
             position: absolute;
-            left: clamp(132.5px,61.91459999999999vw,530px);
+            left: clamp(132.5px, 61.9146vw, 530px);
         }
 
-        &_wheat{
+        &_wheat {
             position: absolute;
-            left: clamp(152.5px,71.2602vw,610px);
+            left: clamp(152.5px, 71.2602vw, 610px);
         }
     }
 }
