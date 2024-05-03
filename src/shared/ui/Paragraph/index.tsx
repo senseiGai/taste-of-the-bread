@@ -6,7 +6,7 @@ interface Props {
 	margin?: string
 	align?: string
 	width?: string
-	paragraphType: 'mobile' 
+	paragraphType: string| 'mobile' 
 }
 
 export const Paragraph: React.FC<Props> = ({ text, margin, width, align, paragraphType }) => {

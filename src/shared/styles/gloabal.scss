@@ -13,9 +13,9 @@
 h1 {
     color:  #444;
     text-align: center;
-    font-family: "Proxima Soft";
     font-size: clamp(10px,4.6728vw,40px);
     font-style: normal;
     font-weight: 600;
     line-height: normal; 
+    @apply font-Proxima;
 }

@@ -1,0 +1,33 @@
+.muka-mobile {
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        &__circle {
+            border-radius: 50%;
+            border: 1px solid #E4E1DE;
+            width: 180px;
+            height: 170px;
+            
+            &_picture {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                @apply mt-3;
+            }
+        }
+
+        &__heading {
+            @apply font-Proxima;
+            font-size: clamp(8px,3.73824vw,32px);
+            font-style: normal;
+            color:  #444;
+            font-weight: 600;
+            line-height: normal;
+            text-transform: uppercase; 
+            @apply mt-3;
+        }
+    }
+}

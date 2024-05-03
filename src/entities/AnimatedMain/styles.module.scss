@@ -1,11 +1,13 @@
 .container {
+    @apply mt-8;
     width: 100vw; 
-    height: clamp(175px,81.774vw,700px);
     overflow-x: hidden;
     overflow-y: hidden;
 
     &__images {
         position: relative;
+        overflow-x: hidden;
+        overflow-y: hidden;
 
         &_small_ellipse {
             position: absolute;
@@ -15,7 +17,7 @@
         &_bread {
             position: absolute;
             left: clamp(28px, 13.08384vw, 112px);
-            top: 14px;
+            top: clamp(5px,2.3364vw,20px);
             z-index: 1;
             width:clamp(160px,74.7648vw,640px);
         }

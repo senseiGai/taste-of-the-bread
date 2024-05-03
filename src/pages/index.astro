@@ -1,6 +1,8 @@
 ---
 import { HeaderMobile } from '@features/HeaderMobile/index'
 import MainMobile from '@widgets/Screens/MainMobile/index.astro'
+import Advantages from '@widgets/Screens/Advantages/index.astro'
+import '@shared/styles/gloabal.scss'
 
 import Layout from '../layouts/Layout.astro'
 
@@ -14,5 +16,6 @@ import styles from './styles/Home/styles.module.scss'
 	<main class={styles.main__mobile} id="main-mobile">
 		<HeaderMobile client:load />
 		<MainMobile />
+		<Advantages/>
 	</main>
 </Layout>
