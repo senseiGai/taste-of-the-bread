@@ -1,5 +1,4 @@
 .container {
-    @apply mt-8;
     width: 100vw; 
     overflow-x: hidden;
     overflow-y: hidden;
@@ -11,20 +10,24 @@
 
         &_small_ellipse {
             position: absolute;
-            left: clamp(20px, 9.3456vw, 80px);
+            left: clamp(5px,2.3364vw,20px);
+            opacity: 0.4;
+            width: clamp(50px,23.363999999999997vw,200px);
         }
 
         &_bread {
             position: absolute;
             left: clamp(28px, 13.08384vw, 112px);
-            top: clamp(5px,2.3364vw,20px);
             z-index: 1;
+            top: clamp(-1px, -0.46728vw,-4px);
             width:clamp(160px,74.7648vw,640px);
         }
 
         &_big_ellipse {
             position: absolute;
+            opacity: 0.3;
             left: clamp(132.5px, 61.9146vw, 530px);
+            width: clamp(100px,46.727999999999994vw,400px);
         }
 
         &_wheat {

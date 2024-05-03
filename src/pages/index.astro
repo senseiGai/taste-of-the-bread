@@ -13,9 +13,11 @@ import styles from './styles/Home/styles.module.scss'
 	title=""
 	description=""
 >
-	<main class={styles.main__mobile} id="main-mobile">
-		<HeaderMobile client:load />
-		<MainMobile />
-		<Advantages/>
+	<main class={styles.mobile} id="main-mobile">
+		<div class={styles.mobile__container}>
+			<HeaderMobile client:load />
+			<MainMobile />
+			<Advantages/>
+		</div>
 	</main>
 </Layout>

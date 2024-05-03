@@ -1,0 +1,6 @@
+<svg width="200" height="200" viewBox="0 0 200 200">
+  <circle cx="100" cy="100" r="90" fill="transparent" stroke="#ddd" stroke-width="20" />
+  <path id="progressPath" fill="none" stroke="black" stroke-width="20" 
+        stroke-dasharray="565.48" stroke-dashoffset="565.48" 
+        d="M100,10 a90,90 0 0,1 0,180 a90,90 0 0,1 0,-180" />
+</svg>

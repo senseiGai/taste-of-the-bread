@@ -11,6 +11,7 @@ import big_ellipse from '@assets/Main/big_ellipse.svg';
 import small_ellipse from '@assets/Main/small_ellipse.svg';
 import wheat from '@assets/Main/wheat.svg';
 import bread from '@assets/Main/bread.webp';
+import circle from '@assets/Main/circle.svg'
 
 import styles from './styles.module.scss';
 
@@ -26,14 +27,14 @@ export const AnimatedMain = () => {
   return (
     <div className={styles.container}>
       <div className={`${styles.container__images} flex flex-row`}>
-        <img src={small_ellipse.src} ref={smallEllipseRef} alt="small-ellipse" className={styles.container__images_small_ellipse} />
-        <div ref={letterContainerRef} className="flex items-center flex-col-reverse mt-5 ml-7">
+        <img src={circle.src} ref={smallEllipseRef} alt="small-ellipse" className={styles.container__images_small_ellipse} />
+        <div ref={letterContainerRef} className="flex items-center flex-col-reverse mt-2 ml-7">
           {letters.map((letter, index) => (
             <InvertedText key={index} letter={letter} invertedTextType="mobile" />
           ))}
         </div>
         <img src={bread.src} alt="bread"  className={styles.container__images_bread}/>
-        <img src={big_ellipse.src}  alt="big-ellipse" ref={bigEllipseRef} className={styles.container__images_big_ellipse}/>
+        <img src={circle.src}  alt="big-ellipse" ref={bigEllipseRef} className={styles.container__images_big_ellipse}/>
         <img src={wheat.src} alt="wheat" ref={wheatRef} className={styles.container__images_wheat} />
       </div>
       <div className='flex justify-center items-center'>

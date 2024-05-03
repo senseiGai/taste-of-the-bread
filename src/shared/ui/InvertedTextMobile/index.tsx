@@ -7,7 +7,7 @@ interface IInvertedText {
     margin?: string; 
 }
 
-export const InvertedText: React.FC<IInvertedText> = ({ invertedTextType, letter, margin = '' }, ref) => {
+export const InvertedText: React.FC<IInvertedText> = ({ invertedTextType, letter, margin = '' }) => {
     const invertedTextClass = `${styles.letter} ${styles[invertedTextType]} ${margin ? margin : ''}`;
 
     return (

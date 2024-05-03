@@ -1,12 +1,16 @@
 ---
-// import styles from 
+import styles from ''
 import {AdvantageBlock} from '@entities/AdvantageBlock/index'
+import 'animate.css'
 
-import Muka from '@assets/Advantages/muka.webp'
-
+import muka from '@assets/Advantages/muka.svg'
+import buckwheat from '@assets/Advantages/buckwheat.svg'
 ---
 
 <section class="mt-8">
     <h1>Наши преимущества</h1>
-    <AdvantageBlock picture={Muka} heading='В нашей пекарне' paragraph='каждое изделие создается вручную настоящими мастерами своего дела. Это не только гарантирует высокое качество и неповторимый вкус продукции, но и придает ей особенный характер и уникальность.' paragraphType='mobile' advantageBlockType='muka-mobile' margin='mt-5' paragraphMargin='mt-3'/>
+    <AdvantageBlock picture={muka} heading='В нашей пекарне' paragraph='Kаждое изделие создается вручную настоящими мастерами своего дела. Это не только гарантирует высокое качество и неповторимый вкус продукции, но и придает ей особенный характер и уникальность.' paragraphType='mobile' advantageBlockType='muka-mobile' margin='mt-5' paragraphMargin='mt-3' width='86%'/>
+    <div class={styles} >
+        <img src={buckwheat.src} alt="buckwheat" class=" top-0 right-0 absolute animate__animated animate__fadeInRight">
+    </div>
 </section>

@@ -8,14 +8,14 @@
         &__circle {
             border-radius: 50%;
             border: 1px solid #E4E1DE;
-            width: 180px;
-            height: 170px;
+            width:clamp(110px,51.4008vw,440px);
+            height:clamp(105px,49.0644vw,420px);
             
             &_picture {
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                @apply mt-3;
+                @apply mt-4;
             }
         }
 
