@@ -1,6 +1,6 @@
 import React from 'react'
 import styles from './styles.module.scss'
-
+import 'animate.css'
 interface Props {
 	text: string
 	margin?: string
@@ -15,7 +15,7 @@ export const Paragraph: React.FC<Props> = ({ text, margin, width, align, paragra
 	} ${margin} ${align}`
 
 	return (
-		<p className={`${paragraphClass} `} style={{ width }}>
+		<p className={`${paragraphClass} animate__animated animate__fadeInUp`} style={{ width }}>
 			{text}
 		</p>
 	)

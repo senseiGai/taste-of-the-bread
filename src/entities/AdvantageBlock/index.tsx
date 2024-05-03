@@ -1,7 +1,6 @@
 import React from 'react';
 import { Paragraph } from '@shared/ui/Paragraph';
 import styles from './styles.module.scss';
-import test from '@assets/Advantages/test.svg'
 
 
 interface ImageMetadata {
@@ -9,7 +8,7 @@ interface ImageMetadata {
 }
 
 interface IAdvantage {
-    advantageBlockType: 'muka-mobile'; 
+    advantageBlockType: 'muka-mobile' | 'butter-mobile'; 
     margin?: string;
     picture: ImageMetadata;
     heading: string;
@@ -17,21 +16,23 @@ interface IAdvantage {
     paragraphType: string;
     paragraphMargin: string;
     width: string;
+    line: ImageMetadata;
 }
 
 
-export const AdvantageBlock: React.FC<IAdvantage> = ({ advantageBlockType, margin = '',picture,heading,paragraph, paragraphType, paragraphMargin, width }) => {
+export const AdvantageBlock: React.FC<IAdvantage> = ({ advantageBlockType, margin = '',picture,heading,paragraph, paragraphType, paragraphMargin, width, line }) => {
     const advantageBlockClass = `${styles.advantage} ${styles[advantageBlockType]} ${margin ? margin : ''}`;
 
     return (
         <div className={advantageBlockClass}>
             <div className={styles.container} >
-                <div className={styles.container__circle}>  
+                <figure className={`${styles.container__circle} `}>
+                    <img src={line.src} alt='line' className={`${styles.container__circle_line} `}/>
                     <img src={picture.src} alt="picture" className={styles.container__circle_picture}/>
-                </div>  
-                <span className={styles.container__heading}>{heading}</span>
+                </figure>  
+                <span className={`${styles.container__heading} animate__animated animate__fadeInUp`}>{heading}</span>
                 <Paragraph text={paragraph} paragraphType={paragraphType} margin={paragraphMargin} width={width}/>
             </div>
-       </div>
+        </div>
     );
 };
